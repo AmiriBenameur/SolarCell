@@ -32,9 +32,9 @@ n_GaN = material('GaN')(T=T, Nd=1e24)
 p_GaN = material('GaN')(T=T, Na=8e22)
 
 
-MyJunction = Junction([Layer(width=100e-9, material=n_GaN, role= "Emitter")] +
+MyJunction = Junction([Layer(width=10e-9, material=n_GaN, role= "Emitter")] +
                           QW_list +
-                         [Layer(width=500e-9, material=p_GaN, role="Base")],
+                         [Layer(width=50e-9, material=p_GaN, role="Base")],
                           sn=1e6, sp=1e6, T=T, kind='PDD')
 
 #=======================
