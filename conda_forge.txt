@@ -1,0 +1,41 @@
+
+====== Create the environment from the environment.yml file ===========
+
+$ conda env create -n [new_env] -f pymatgen.yml
+
+$ conda env export > environment.yml
+
+==If we want to avoid version numbers we can use the following command instead: 
+
+$ conda env export | cut -f 1 -d '=' > environment.yml
+
+====== Updating a conda env using a YAML file =======
+
+$ conda env update --file environment.yml
+
+$ conda list -e > requirements.txt
+
+$ conda list -e | cut -f 1 -d '=' > requirements.txt
+
+$ conda create --name <env_name> --file requirements.txt
+
+=============== conda-forge channel  ======================
+
+$ conda create --channel conda-forge --name testapp pandas
+
+$ conda create -c conda-forge -n testapp pandas
+
+$ conda config --show channels
+
+$ conda config --show default_channels
+
+
+ ========= To install packages always from conda-forge ===============
+
+$ conda config --set channel_priority strict
+
+
+$ conda create --name [new_env] --clone [other_env]
+
+
+
