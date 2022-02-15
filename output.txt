@@ -5,3 +5,4 @@ my_solar_cell[2].__dict__.keys()
 # from the materials database relevant for the PDD solver and storing them in a dictionary.
 
 MyDevice = PDD.CreateDeviceStructure( 'TestDevice', T = MyJunction.T, layers = MyJunction)
+kkj
