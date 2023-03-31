@@ -13,7 +13,7 @@ C = 2.39
 gamma = 0.146
 D = 24.2
 epsilon1inf = 1.6
-
+.......
 [InGaN]
 lattice_constant=5.4672+2.92e-5*(T-300) Angstrom
 Eg0_Gamma=3.63 eV
